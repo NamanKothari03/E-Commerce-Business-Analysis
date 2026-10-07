@@ -1,0 +1,11 @@
+Problem,Action,Reason
+Category spelling/spaces,strip + title case,15 spellings became 5
+State casing,strip + title case,28 became 14
+Returned labels Y/N,mapped to Yes/No,same labels
+Duplicate rows,dropped,exact copies inflate revenue
+Negative Quantity/Sales,absolute value,"sign typo, cost and profit were normal"
+Missing City,filled from customer's other orders,one city per customer
+Missing Payment_Mode,"filled from same order, else Unknown",one payment per order
+Missing Discount,recovered from product price,avoid guessing
+Profit consistency,0 mismatches,no action
+Sales outliers,"flagged, kept",large but plausible orders
